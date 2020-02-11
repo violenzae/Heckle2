@@ -1,8 +1,3 @@
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
-import $ from 'jquery';
-
 import { WeatherService } from './../src/weather-service.js';
 
 $(document).ready(function() {
