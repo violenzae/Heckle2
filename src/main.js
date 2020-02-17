@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
 
-import { WeatherService } from './../src/weather-service.js';
+import { WeatherService } from './../src/post.js';
 
 $(document).ready(function() {
 
