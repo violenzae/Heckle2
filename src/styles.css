@@ -6,5 +6,21 @@
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    /* opacity: 0.5; */
   }
+
+  #title {
+      margin-top: 10%;
+  }
+
+  .incidentBtn {
+      background-color: purple;
+      color: white;
+      border-radius: 8px;
+      border: none;
+      padding: 15px;
+  }
+
+  img {
+    opacity: 0.5;
+  }
+
