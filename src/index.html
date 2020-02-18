@@ -95,14 +95,24 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis consequatur quos, molestias quod mollitia recusandae, ab ex vero illo eum, quibusdam nulla nihil autem eveniet quisquam animi consequuntur cum quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia velit ducimus mollitia rerum quasi earum quis perspiciatis maxime illo, ut laudantium modi, quidem dolore porro non officia, est dolores et. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium est commodi mollitia dicta. Laudantium expedita in totam officia corrupti sit consectetur, ex, dicta aut earum obcaecati asperiores laboriosam nam id. </p><br>
         <div class="row">
           <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" class="map"><br>
-          <form class="form-inline">
+          <form class="form-inline" id="heckling">
             <div class="form-group mx-sm-3 mb-2">
               <label for="inputLocation" class="sr-only">Location</label>
               <input type="location" class="form-control" id="inputLocation" placeholder="Enter Location">
             </div>
             <button type="submit" class="btn btn-primary mb-2">Search</button>
-          </form>
+          <div class="col-md-4">
+          <h4>What heckle type was it?</h4>
+          <input type="radio" name="heckleType" value="racism">
+          <label for="male">Racism</label><br>
+          <input type="radio" name="heckleType" value="homophobia">
+          <label for="male">Homophobia</label><br>
+          <input type="radio" name="heckleType" value="sexualHarassment">
+          <label for="male">Sexual Harassment</label><br>
+          <label>Please leave a description of the incident:</label>
+          <input type="text" class="inputInc"><br>
         </div>
+        </form>
       <h1 id="contact">Contact:</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque distinctio earum provident blanditiis itaque deleniti accusantium explicabo modi ex delectus perferendis repudiandae iste nam, officia temporibus quam tempora est dicta. </p><br>
         <footer>Copyright (c) 2020 Heckle - This software is licensed under the MIT license.</footer>
