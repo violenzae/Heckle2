@@ -1,32 +1,59 @@
 .masthead {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/News/public-policy/040417_norwitalia_THUMB_LARGE.jpg?w=1155');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: black;
-  }
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/News/public-policy/040417_norwitalia_THUMB_LARGE.jpg?w=1155');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
 
-  #title {
-      margin-top: 10%;
-      margin-left: 3%;
-  }
+#title {
+    margin-top: 10%;
+    margin-left: 3%;
+}
 
-  .incidentBtn {
-      background-color: rgb(85, 5, 85);
-      color: white;
-      border-radius: 8px;
-      border: none;
-      padding: 15px;
+.incidentBtn {
+    background-color: rgb(85, 5, 85);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
 
-  }
+}
 
-  img {
-    opacity: 0.5;
-  }
+img {
+  opacity: 0.5;
+}
 
-  .text-muted {
-    color: rgb(85, 5, 85);
-  }
+.landingTitle {
+  font-size: 75px;
+}
 
+.map {
+  width: 40%;
+  height: 10%;
+  float: left;
+}
+
+h1 {
+  margin-top: 2%;
+}
+
+p {
+  text-indent: 35px;
+}
+
+footer {
+  text-align: center;
+}
+
+.form-inline {
+  float: right;
+  margin-left: 3%;
+  margin-top: 30%;
+}
+
+#services {
+  margin-top: 5%;
+}

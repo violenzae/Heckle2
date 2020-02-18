@@ -8,88 +8,105 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="main.js"></script>
-    <title>Heckle App</title>
+    <title>Heckle</title>
   </head>
   <body>
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Welcome to Heckle</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Safe Places</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center" id="title">
-            <h1 class="font-weight-light"><strong>Heckle</strong></h1>
-            <p class="lead">Your Virtual Safe Place</p>
-            <button class="incidentBtn">Report an Incident</button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- services  -->
-    <section class="page-section" id="services">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h4 class="section-subheading text-muted">How can we help YOU?</h4>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Find a Safe Place</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Call 9-1-1</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Talk to Someone</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
+        <a class="navbar-brand" href="#">Welcome to Heckle</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Safe Places</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    
+    </nav>
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center" id="title">
+          <h1 class="landingTitle">Heckle</h1>
+          <p class="lead">Your Personal Safe Place</p>
+          <a href="#safePlaces"><button class="incidentBtn">Report an Incident</button></a>
+        </div>
+      </div>
+      <!-- services  -->
+      <section class="page-section" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Services</h2>
+              <h4 class="section-subheading text-muted">How can we help YOU?</h4>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4 class="service-heading">Find a Safe Place</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4 class="service-heading">Call 9-1-1</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+              </span>
+              <h4 class="service-heading">Talk to Someone</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h1>About Us!</h1>
+        <p>Welcome to Heckle! Here, you'll have access to all kinds of resources that will help you live your life knowing that safety is in the palm of your hand. After witnessing cat-calling, bullying, harrassment, and many other types of heckling, our team made it a mission to provide the world with tools that can help keep all communities safer by providing awareness, information, and outsourced services.</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum reprehenderit delectus quod dolorum dolore esse? Temporibus repellat praesentium consequuntur rem dolorem laboriosam in? Suscipit quis sapiente asperiores vero voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse itaque voluptatem delectus distinctio expedita recusandae unde dolore laboriosam sint placeat sunt voluptatibus, hic. Amet quos praesentium non similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid recusandae hic numquam nam debitis excepturi dolores consequuntur temporibus fugiat obcaecati ut expedita optio eos, aspernatur saepe magni totam id iste.</p><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem repudiandae temporibus quae nostrum adipisci at quas corporis eius! Quod asperiores hic quaerat illum dicta porro unde id vero excepturi distinctio.</p><br>
+      <h1 id="safePlaces">Safe Places!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis consequatur quos, molestias quod mollitia recusandae, ab ex vero illo eum, quibusdam nulla nihil autem eveniet quisquam animi consequuntur cum quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia velit ducimus mollitia rerum quasi earum quis perspiciatis maxime illo, ut laudantium modi, quidem dolore porro non officia, est dolores et. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium est commodi mollitia dicta. Laudantium expedita in totam officia corrupti sit consectetur, ex, dicta aut earum obcaecati asperiores laboriosam nam id. </p><br>
+        <div class="row">
+          <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" class="map"><br>
+          <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputLocation" class="sr-only">Location</label>
+              <input type="location" class="form-control" id="inputLocation" placeholder="Enter Location">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Search</button>
+          </form>
+        </div>
+      <h1>Contact:</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque distinctio earum provident blanditiis itaque deleniti accusantium explicabo modi ex delectus perferendis repudiandae iste nam, officia temporibus quam tempora est dicta. </p><br>
+        <footer>Copyright (c) 2020 Heckle - This software is licensed under the MIT license.</footer>
+    </div>
+  </header>  
   </body>
 </html>
