@@ -1,3 +1,12 @@
+export class SafeSpaceInfo {
+  constructor(location) {
+  this.location = location;
+  this.heckle = heckle;
+  this.description = description;
+  this.timestamp = timestamp;
+}
+}
+
 export class WeatherService {
     async getWeatherByCity(city) {
       try {
