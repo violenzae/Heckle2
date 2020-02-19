@@ -3,8 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
 
+
 import { SafeSpaces } from './safeSpaces.js';
 import { SafeSpaceInfo } from './../src/safeSpaceInfo.js';
+
 
 $(document).ready(function() {
 

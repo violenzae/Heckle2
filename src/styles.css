@@ -1,0 +1,136 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/News/public-policy/040417_norwitalia_THUMB_LARGE.jpg?w=1155');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+#title {
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+.incidentBtn {
+    background-color: rgb(85, 5, 85);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+
+}
+
+img {
+  opacity: 0.5;
+}
+
+.landingTitle {
+  font-size: 75px;
+}
+
+.map {
+  width: 80%;
+  float: left;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  margin-top: 2%;
+}
+
+p {
+  text-indent: 35px;
+}
+
+footer {
+  text-align: center;
+}
+
+.form-inline {
+  margin-top: 2%;
+}
+
+#services {
+  margin-top: 5%;
+}
+
+#aboutUs {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
+
+#safeSpaces {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
+
+#contact {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
+
+#ourServices {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
+
+.row {
+  margin-bottom: 2%;
+}
+
+#location {
+  margin-left: 2%;
+}
+
+#house {
+  height: 80px;
+  width: 80px;
+}
+
+#phone {
+  height: 115px;
+  width: 115px;
+}
+
+#person {
+  height: 80px;
+  width: 80px;
+}
+
+.heckleTypeHeader {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
