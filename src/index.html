@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/js" src="main.js"></script>
     <title>Heckle</title>
   </head>
   <body>
@@ -101,24 +101,46 @@
           <div class="col-sm-6">
             <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" class="map">
           </div>
-          <div class="col-sm-6" id="heckleType">
-            <h4 class="heckleTypeHeader">What type of Heckle was it?</h4>
-            <input type="radio" name="heckleType" value="racism">
-            <label for="male">Racism</label><br>
-            <input type="radio" name="heckleType" value="homophobia">
-            <label for="male">Homophobia</label><br>
-            <input type="radio" name="heckleType" value="sexualHarassment">
-            <label for="male">Sexual Harassment</label><br>
-            <div class="form-group">
+          <form action="submit" id="post"> 
+          <div class="col-sm-6" id="heckle-type">
+              <div class="form-group">
+                  <label for="heckle-type"><u>What type of Heckle was it?</u></label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="heckle-type" value="racism" checked>
+                      Racism
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="heckle-type" value="homophobia">
+                      Homophobia
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="heckle-type" value="sexual-harassment">
+                      Sexual Harassment
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="heckle-type" value="Ableist">
+                      Ableist
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="heckle-type" value="other">
+                      Other
+                    </label>
+                  </div>
               <label for="comment">Please leave a description of the incident:</label>
               <textarea class="form-control" rows="5" id="comment"></textarea>
-              <form id="location" class="form-inline">
                 <div class="form-group mx-sm-3 mb-2">
-                  <label for="inputLocation" class="sr-only">Location</label>
-                  <input type="location" class="form-control" id="inputLocation" placeholder="Enter Location">
+                  <button type="submit" class="btn btn-primary mb-2" id="post">Submit</button>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Submit</button>
-              </form>
+          </form>    
             </div>
           </div>
         </div>

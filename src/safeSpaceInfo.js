@@ -1,6 +1,6 @@
 export class SafeSpaceInfo {
     constructor(safeSpace) {
-        this.safeSpace = safeSpace
+        this.safeSpace = safeSpace;
         this.name = "NAME: " + safeSpace.name;
         this.address = "ADDRESS: " + safeSpace.street + safeSpace.city + safeSpace.state;
         this.directions = "DIRECTIONS: " + safeSpace.directions;

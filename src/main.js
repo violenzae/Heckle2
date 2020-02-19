@@ -54,7 +54,12 @@ $(document).ready(function() {
       }  
     
     getLocation();
-    
-
   });
-});
+
+  $("form#post").submit(function(event) {
+    event.preventDefault();
+    let category = $('input:radio[name=heckle-type]:checked').val();
+    let comment = $("#comment").val();
+    console.log(category, comment);
+    });
+  });
