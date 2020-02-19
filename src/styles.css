@@ -31,9 +31,10 @@ img {
 }
 
 .map {
-  width: 40%;
-  height: 10%;
+  width: 80%;
   float: left;
+  margin-left: 15%;
+  margin-bottom: 5%;
 }
 
 h1 {
@@ -49,32 +50,33 @@ footer {
 }
 
 .form-inline {
-  float: right;
-  margin-left: 3%;
-  margin-top: 30%;
+  margin-top: 2%;
 }
 
 #services {
   margin-top: 5%;
 }
 
-
 #aboutUs {
   background-color: rgb(85, 5, 85);
   color: white;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 8px;
   border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
 }
 
-#safePlaces {
+#safeSpaces {
   background-color: rgb(85, 5, 85);
   color: white;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 8px;
   border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
 }
 
 #contact {
@@ -82,8 +84,10 @@ footer {
   color: white;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 8px;
   border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
 }
 
 #ourServices {
@@ -91,17 +95,18 @@ footer {
   color: white;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 8px;
   border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
 }
 
-#heckling {
-  background-color: rgb(85, 5, 85);
-  color: white;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border-radius: 8px;
+.row {
+  margin-bottom: 2%;
+}
+
+#location {
+  margin-left: 2%;
 }
 
 #house {
@@ -110,11 +115,22 @@ footer {
 }
 
 #phone {
-  height: 80px;
-  width: 80px;
+  height: 115px;
+  width: 115px;
 }
 
 #person {
   height: 80px;
   width: 80px;
+}
+
+.heckleTypeHeader {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
 }
