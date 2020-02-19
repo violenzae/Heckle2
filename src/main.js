@@ -29,7 +29,7 @@ $(document).ready(function() {
     async function getElements(result) {
       result.forEach(function(safeSpace) {
         let safeSpaceInfo = new SafeSpaceInfo(safeSpace);
-        let info = '<ul class="safeOutput">' + safeSpaceInfo.name + "<br>" + safeSpaceInfo.address + "<br>" + safeSpaceInfo.directions + "<br>" + safeSpaceInfo.distance + "<br>" + safeSpaceInfo.accessible + "</ul>";
+        let info = '<ul class="safeOutput">' + safeSpaceInfo.name + "<br>" + safeSpaceInfo.address + "<br>" + safeSpaceInfo.directions + "<br>" + safeSpaceInfo.distance + "<br>" + safeSpaceInfo.accessible + '</ul>';
         $("ul.spaceList").append(info);
     });
   }
