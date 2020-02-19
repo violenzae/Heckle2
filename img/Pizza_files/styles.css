@@ -1,0 +1,15 @@
+body {
+    background-image: url(../img/tmnt.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+   
+}
+
+.jumbotron {
+    background-color: lightsalmon
+}
+
+.price {
+    
+}
