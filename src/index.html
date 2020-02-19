@@ -104,21 +104,31 @@
           <div class="col-sm-6" id="heckleType">
             <h4 class="heckleTypeHeader">What type of Heckle was it?</h4>
             <input type="radio" name="heckleType" value="racism">
-            <label for="male">Racism</label><br>
+            <label for="category">Racism</label><br>
             <input type="radio" name="heckleType" value="homophobia">
-            <label for="male">Homophobia</label><br>
+            <label for="category">Homophobia</label><br>
             <input type="radio" name="heckleType" value="sexualHarassment">
-            <label for="male">Sexual Harassment</label><br>
+            <label for="category">Sexual Harassment</label><br>
+            <input type="radio" name="heckleType" value="other">
+            <label for="category">Other</label><br>
             <div class="form-group">
               <label for="comment">Please leave a description of the incident:</label>
               <textarea class="form-control" rows="5" id="comment"></textarea>
+              <div class="row">
+                <div class="col-md-6">
               <form id="location" class="form-inline">
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="inputLocation" class="sr-only">Location</label>
-                  <input type="location" class="form-control" id="inputLocation" placeholder="Enter Location">
-                </div>
                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>
               </form>
+              <div class="col-md-6">
+              <button type="submit" id="safeSpaceLoc" class="btn btn-success mb-2">Find A Safe Space</button>
+              <div id="safeResults">
+                <ul>
+
+                </ul>
+              </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>

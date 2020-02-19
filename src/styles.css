@@ -107,6 +107,16 @@ footer {
 
 #location {
   margin-left: 2%;
+  width: 300px;
+  height: 40px;
+}
+
+#safeSpaceLoc {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 200px;
+  height: 40px;
+  float: right;
 }
 
 #house {
