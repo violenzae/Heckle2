@@ -22,15 +22,15 @@ $(document).ready(function() {
         getElements(result);
         console.log(result);
       })();
-      document.getElementById("spaceList").innerHTML = "Latitude: " + safeLat + 
-      "<br>Longitude: " + safeLong;
     }
 
     async function getElements(result) {
-      result.forEach(safeSpace)
-      let safeSpaceInfo = new SafeSpaceInfo(safeSpace);
-      let info = '<li>' + safeSpaceInfo.name + "<br>" + safeSpaceInfo.address + "<br>" + safeSpaceInfo.description + "<br>" + safeSpaceInfo.distance 
-    }
+      result.forEach(function(safeSpace) {
+        let safeSpaceInfo = new SafeSpaceInfo(safeSpace);
+        let info = '<li>' + safeSpaceInfo.name + "<br>" + safeSpaceInfo.address + "<br>" + safeSpaceInfo.directions + "<br>" + safeSpaceInfo.distance + "<br>" + safeSpaceInfo.accessible + "</li>";
+        $("ul.spaceList").append(info);
+    });
+  }
 
    function errorHandler(err) {
       if(err.code == 1) {
