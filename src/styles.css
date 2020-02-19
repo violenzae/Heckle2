@@ -37,7 +37,7 @@ img {
   margin-bottom: 5%;
 }
 
-h1 {
+.sectionHeaders {
   margin-top: 2%;
 }
 
@@ -112,11 +112,12 @@ footer {
 }
 
 #safeSpaceLoc {
-  margin-top: 2%;
-  margin-left: 2%;
-  width: 200px;
-  height: 40px;
-  float: right;
+background-color: rgb(139, 130, 156);
+color: rgb(85, 5, 85);
+border-radius: 8px;
+border: none;
+padding: 15px;
+
 }
 
 #house {
@@ -143,4 +144,26 @@ footer {
   border-radius: 8px;
   margin-bottom: 2%;
   text-indent: 15px;
+}
+
+#safeZone {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
+
+.safeOutput {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+
 }
