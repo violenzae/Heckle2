@@ -236,7 +236,7 @@ padding: 15px;
   border-radius: 8px;
 }
 
-#subButton {
+#submit {
 background-color: rgb(139, 130, 156);
 color: rgb(85, 5, 85);
 border-radius: 10px;
@@ -247,7 +247,7 @@ border-style: solid;
 border-color: white;
 }
 
-#curLoc {
+#geoLoc {
   background-color: rgb(139, 130, 156);
   color: rgb(85, 5, 85);
   border-radius: 10px;
@@ -258,11 +258,11 @@ border-color: white;
   border-color: white;
   }
 
-#curLoc:hover {
+#geoLoc:hover {
   box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.575), 0 17px 50px 0 rgba(255, 255, 255, 0.521);
 }
 
-#subButton:hover {
+#submit:hover {
     box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.575), 0 17px 50px 0 rgba(255, 255, 255, 0.521);
   }
 
