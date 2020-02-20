@@ -19,7 +19,10 @@
     border-radius: 8px;
     border: none;
     padding: 15px;
+}
 
+.incidentBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.575), 0 17px 50px 0 rgba(0, 0, 0, 0.521);
 }
 
 img {
@@ -129,8 +132,13 @@ color: rgb(85, 5, 85);
 border-radius: 8px;
 border: none;
 padding: 15px;
-
 }
+
+#safeButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.575), 0 17px 50px 0 rgba(0, 0, 0, 0.521);
+}
+
+
 
 #safeSpaceLoc {
 background-color: rgb(139, 130, 156);
@@ -138,7 +146,10 @@ color: rgb(85, 5, 85);
 border-radius: 8px;
 border: none;
 padding: 15px;
+}
 
+#safeSpaceLoc:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.575), 0 17px 50px 0 rgba(0, 0, 0, 0.521);
 }
 
 
@@ -190,6 +201,9 @@ padding: 15px;
   padding: 8px;
   border-radius: 8px;
   margin-bottom: 2%;
+  border: 3px;
+  border-style: solid;
+  border-color: rgb(139, 130, 156);
 
 }
 
@@ -245,10 +259,10 @@ border-color: white;
   }
 
 #curLoc:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.575), 0 17px 50px 0 rgba(255, 255, 255, 0.521);
 }
 
 #subButton:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.575), 0 17px 50px 0 rgba(255, 255, 255, 0.521);
   }
 
