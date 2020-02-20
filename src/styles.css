@@ -37,7 +37,7 @@ img {
   margin-bottom: 5%;
 }
 
-h1 {
+.sectionHeaders {
   margin-top: 2%;
 }
 
@@ -107,7 +107,28 @@ footer {
 
 #location {
   margin-left: 2%;
+  width: 300px;
+  height: 40px;
 }
+
+#safeButton {
+background-color: rgb(139, 130, 156);
+color: rgb(85, 5, 85);
+border-radius: 8px;
+border: none;
+padding: 15px;
+
+}
+
+#safeSpaceLoc {
+background-color: rgb(139, 130, 156);
+color: rgb(85, 5, 85);
+border-radius: 8px;
+border: none;
+padding: 15px;
+
+}
+
 
 #house {
   height: 80px;
@@ -133,4 +154,32 @@ footer {
   border-radius: 8px;
   margin-bottom: 2%;
   text-indent: 15px;
+}
+
+#safeZone {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
+
+.safeOutput {
+  border-style: solid;
+  background-color: white;
+  color: rgb(85, 5, 85);
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+
+}
+
+.safeOutput:nth-child(odd) {
+  color: white; 
+  background-color: rgb(85, 5, 85);
 }
