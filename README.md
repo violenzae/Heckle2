@@ -1,45 +1,77 @@
-# _{Application Name}_
+# Heckle.
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Team Week Project - 2/21/2020_
 
-#### By _**{List of contributors}**_
+#### _By Alyssa Colistro, Mariam Alaeddin, Rachel Schieferstein, and Jonathan Carlos_
 
-## Description
+## **Description**
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application will make API requests to google maps in order to pinpoint an exact location using longitude and latitude. By doing so, user's will be able to, at anytime, click a location and be prompted to enter fields of information. For the purposes of this app, the infomation will consist of instances during which someone is being heckled._
 
-|   Behavior    |   Input     |     Output    |
-|--------------:|:-----------:|--------------:|
+## Preview
+<img src="./img/landing.png">
 
+## **Behavior Driven Development**
 
+| Behavior | Input | Output |
+|----------|:-----:|--------|
+| User clicks on the google map provided. | 'click' | A pinpoint is displayed on the map. |
+| User enters information on the heckle incident in a comment box. | "string of information" | "entered string of information." |
+| User clicks "Submit." | 'click' | The map location is displayed with the incident information. |
+| Multiple users submit incidents. | 'click click click' | The map shown displays multiple incidents. |
+| User searches for safe spaces through location. | 'city or zip code' | A list of safe places nearby is displayed with a modal. |
 
+## **Setup/Installation**
 
+*Option One:*
+1. Open up your terminal.
+2. Navigate to the desired directory in which you want to clone this repository.
+3. Use `git clone https://github.com/acolistro/Heckle2` to clone this repository.
+4. Open the repository.
+5. Install all dependencies using `$ npm install` in your terminal.
+6. Use `$ npm run build` to start a package bundle.
+7. Navigate to `https://developers.google.com/maps/documentation/javascript/get-api-key` for instructions on how to generate your personal API key.
+8. On line 336 in the index.html file within the src directory, insert your personal API key in the `KEYHERE` section.
+9. Drag the html file into your broswer or use `$ npm run start` in your terminal for a live server.
+10. Click a spot on the map.
+11. Enter information on your experience.
+12. Click "Enter!"
 
+*Option Two:*
 
-## Setup/Installation Requirements
+Copy and paste `https://jonathancarlos21.github.io/acolistro/Heckle2` into your address bar.
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+## **Known Bugs**
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+No known bugs at this time.
 
-## Known Bugs
+## **Support and contact details**
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+If you have any questions, comments, or concerns, feel free to contact the content creator at examplemail@company.net 
 
-## Support and contact details
+## **Technologies used**
+* REFUGE Restrooms API
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+* Google Maps API
 
-## Technologies Used
+* Webpack
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* JavaScript 
 
-### License
+* jQuery 3.4.1
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+* HTML 5
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+* CSS
+
+* Bootstrap 4.4.1
+
+* Visual Studio Code
+
+* GitBash
+
+## **License**
+
+Copyright (c) 2020 **_Heckle._**
+
+This software is licensed under the MIT license.
