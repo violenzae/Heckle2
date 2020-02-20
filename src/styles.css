@@ -57,7 +57,7 @@ footer {
   margin-top: 5%;
 }
 
-#aboutUs {
+/* .sectionHeaders {
   background-color: rgb(85, 5, 85);
   color: white;
   list-style-type: none;
@@ -66,9 +66,9 @@ footer {
   border-radius: 8px;
   margin-bottom: 2%;
   text-indent: 15px;
-}
+} */
 
-#safeSpaces {
+#ourServices {
   background-color: rgb(85, 5, 85);
   color: white;
   list-style-type: none;
@@ -90,7 +90,7 @@ footer {
   text-indent: 15px;
 }
 
-#ourServices {
+#safeZone {
   background-color: rgb(85, 5, 85);
   color: white;
   list-style-type: none;
@@ -100,6 +100,29 @@ footer {
   margin-bottom: 2%;
   text-indent: 15px;
 }
+
+#safeSpaces {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
+
+#aboutUs {
+  background-color: rgb(85, 5, 85);
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  text-indent: 15px;
+}
+
 
 .row {
   margin-bottom: 2%;
@@ -183,3 +206,22 @@ padding: 15px;
   color: white; 
   background-color: rgb(85, 5, 85);
 }
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+#floating-panel {
+  width: 100%;
+  background-color: rgb(85, 5, 85);
+  color: white;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+

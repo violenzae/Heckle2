@@ -7,26 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="main.js"></script>
-    <style>
-        #map {
-          height: 400px;
-          width: 100%;
-        }
-  
-        #floating-panel {
-          width: 100%;
-          background-color: rgb(85, 5, 85);
-          color: white;
-          padding: 5px;
-          border: 1px solid #999;
-          text-align: center;
-          font-family: 'Roboto','sans-serif';
-          line-height: 30px;
-          padding-left: 10px;
-        }
-      </style>
+    <script type="text/js" src="main.js"></script>
     <title>Heckle</title>
   </head>
   <body>
@@ -35,14 +16,14 @@
       <div class="container">
         <a class="navbar-brand" href="#">Welcome to Heckle</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
+              <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#aboutUs">About</a>
@@ -60,310 +41,320 @@
         </div>
       </div>
     </nav>
-  <header class="masthead">
+    <header class="masthead">
     <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 text-center" id="title">
-          <h1 class="landingTitle">Heckle</h1>
-          <p class="lead">Your Personal Safe Place</p>
-          <a href="#safeSpaces"><button class="incidentBtn">Report an Incident</button></a><br>
-          <br>
-          <a href="#safeZone"><button type="submit" id="safeButton">Safe Spaces</button></a>
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center" id="title">
+        <h1 class="landingTitle">Heckle</h1>
+        <p class="lead">Your Personal Safe Place</p>
+        <a href="#safeSpaces"><button class="incidentBtn">Report an Incident</button></a><br>
+        <br>
+        <a href="#safeZone"><button type="submit" id="safeButton">Safe Spaces</button></a>
+      </div>
+    </div>
+    <!-- services  -->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 id="ourServices" class="section-heading text-uppercase">Services</h2>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Find a Safe Space</h4>
+            <p class="text-muted">They exist! Down below you will have the option to search safe spaces and the not-so-safe spaces. You will also be able to pinpoint a location if you want to submit an incident (you will need to create an account to do this).</p>
+            <img id="house" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_StDMXBRbRRDJ8olaYTq_5kV4oJt1HyB_UQ2hSohcAjAzgDAa&s">
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Call 9-1-1</h4>
+            <p class="text-muted">In case of a life-threatening emergency, always call 911. If you are in a situation where calling 911 can endanger you or others, please reach out to our highly trained professionals for help at (984) 593-9485</p>
+            <img id="phone" class="text-muted" src="https://media.istockphoto.com/vectors/black-and-white-phone-icon-vector-phone-symbol-isolated-on-white-vector-id1074894352?k=6&m=1074894352&s=170667a&w=0&h=DIpQsdq-afupvSGnoZ8H_mXdbSz8q1tjCNREnNrn7X4=">
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Talk to Someone</h4>
+            <p class="text-muted">There is ALWAYS someone willing to listen to you, no matter what! If you or anyone you know are feeling down and out, or if you just need someone to listen, please reach out to us at (244) 045-6532</p>
+            <img id="person" src="https://www.nicepng.com/png/detail/136-1368406_clipart-resolution-842980-person-calling-icon.png">
+          </div>
         </div>
       </div>
-      <!-- services  -->
-      <section class="page-section" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 id="ourServices" class="section-heading text-uppercase">Services</h2>
-            </div>
-          </div>
-          <div class="row text-center">
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 class="service-heading">Find a Safe Space</h4>
-              <p class="text-muted">They exist! Down below you will have the option to search safe spaces and the not-so-safe spaces. You will also be able to pinpoint a location if you want to submit an incident (you will need to create an account to do this).</p>
-              <img id="house" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_StDMXBRbRRDJ8olaYTq_5kV4oJt1HyB_UQ2hSohcAjAzgDAa&s">
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 class="service-heading">Call 9-1-1</h4>
-              <p class="text-muted">In case of a life-threatening emergency, always call 911. If you are in a situation where calling 911 can endanger you or others, please reach out to our highly trained professionals for help at (984) 593-9485</p>
-              <img id="phone" class="text-muted" src="https://media.istockphoto.com/vectors/black-and-white-phone-icon-vector-phone-symbol-isolated-on-white-vector-id1074894352?k=6&m=1074894352&s=170667a&w=0&h=DIpQsdq-afupvSGnoZ8H_mXdbSz8q1tjCNREnNrn7X4=">
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 class="service-heading">Talk to Someone</h4>
-              <p class="text-muted">There is ALWAYS someone willing to listen to you, no matter what! If you or anyone you know are feeling down and out, or if you just need someone to listen, please reach out to us at (244) 045-6532</p>
-              <img id="person" src="https://www.nicepng.com/png/detail/136-1368406_clipart-resolution-842980-person-calling-icon.png">
-            </div>
-          </div>
-        </div>
-      </section>
-      <h1 class="sectionHeaders" id="aboutUs">About Us!</h1>
-        <p>Welcome to Heckle! Here, you'll have access to all kinds of resources that will help you live your life knowing that safety is in the palm of your hand. After witnessing cat-calling, bullying, harrassment, and many other types of heckling, our team made it a mission to provide the world with tools that can help keep all communities safer by providing awareness, information, and outsourced services.</p><br>
-        <p>We are Alyssa, Rachel, Mariam and James.  A powerful team ready to take on the world and help YOU!  We come from different backgrounds in our past careers and are now in the developer world, taking it head on!  With our new skill set, we decided that the first thing we want to do is find a way to make people in our communities feel and be safer. So we built Heckle. A virtual and personal safe space for you to let your community know what's going on in the neighborhood and for you to see what others have to say.  </p><br>
-        <p>Please visit our Incident and Safe Space sections to really see our product in action and don't hesitate to leave us feedback!  The more we hear from you the more we can help!</p><br>
-      <h1 class="sectionHeaders" id="safeSpaces">Report an Incident</h1>
-        <p>Report a Heckle incident now!  We want to help you and your community stay safe in your neighborhood. Simply enter your location or location where the incident took place, a heckle type and a brief description of what happened.  Feel free to visit our <a href="#safeZone">"Find a Safe Space" </a>section to find some refuge. </p>
-      <h1 class="sectionHeaders" id="safeZone">Find a Safe Space</h1>
-        <p>A safe space is an environment in which a person or category of people can feel confident that they will not be exposed to discrimination, criticism, harassment, or any other emotional or physical harm. With Heckle, you can find REFUGE(tm) certified businesses that welcome all people.  You can find someone there to talk to, a place to hang out in, or even just use their gender neutral bathrooms!  Everyone should feel safe in their communities and we are working our hardest to ensure just that! </p>
-        <a href="#safeZone"><button type="submit" id="safeSpaceLoc" class="btn btn-success mb-2">Find A Safe Space</button></a>
-        <div class="safes">
-          <div class="row">
-              <ul class="spaceList">
-
-              </ul>
-        <div class="row">
-          <div id="floating-panel">
-              <label for="address">Address:</label>
-              <input id="address" type="textbox" value="Portland, OR">
-              <label for="category">Category:</label>
-              <select id="category">
-                  <option value="racism">Racism</option>
-                  <option value="homophobia">Homophobia</option>
-                  <option value="sexual-harassment">Sexual Harassment</option>
-                  <option value="other">Other</option>
-                </select>
-              <label for="comment">Comment:</label>
-              <input id="comment" type="textbox"><br>
-              <input id="submit" type="button" value="Submit Address">
-              <input id="geoloc" type="button" value="Or Use Current Location">
-            </div>
-          <div id="map">
-            <script>
-                function initMap() {
-                  var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 13,
-                    center: {lat: 45.5169, lng: -122.6754}
-                  });
-                  var geocoder = new google.maps.Geocoder();
-          
-                  document.getElementById('submit').addEventListener('click', function() {
-                    geocodeAddress(geocoder, map);
-                  });
-                    document.getElementById('geoloc').addEventListener('click', function() {
-                    locAddress(map);
-                  });
-          
-                  var markers = [
-                    {
-                      coords: {lat:45.548561,lng:-122.666489},
-                      iconImage: `http://never-mind.org/img/racism.png`,
-                      content:`<p><strong>Incident type:</strong> racism<br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                    {
-                      coords: {lat:45.520020,lng:-122.666489},
-                      iconImage: `http://never-mind.org/img/homophobia.png`,
-                      content:`<p><strong>Incident type:</strong> homophobia <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                    {
-                      coords: {lat:45.5024,lng:-122.6749},
-                      iconImage: `http://never-mind.org/img/other.png`,
-                      content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },
-                    {
-                      coords: {lat:45.519926,lng:-122.676619},
-                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
-                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-                      
-                    },   
-                    {
-                      coords: {lat:45.509940,lng:-122.683855},
-                      iconImage: `http://never-mind.org/img/racism.png`,
-                      content:`<p><strong>Incident type:</strong> racism<br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                    {
-                      coords: {lat:45.517363,lng:-122.659083},
-                      iconImage: `http://never-mind.org/img/homophobia.png`,
-                      content:`<p><strong>Incident type:</strong> homophobia <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                    {
-                      coords: {lat:45.517599,lng:-122.675166},
-                      iconImage: `http://never-mind.org/img/other.png`,
-                      content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },
-                    {
-                      coords: {lat:45.5111,lng:-122.6834},
-                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
-                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                    {
-                      coords: {lat:45.532322,lng:-122.651839},
-                      iconImage: `http://never-mind.org/img/other.png`,
-                      content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },
-                    {
-                      coords: {lat:45.5101,lng:-122.7158},
-                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
-                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                    {
-                      coords: {lat:45.5119,lng:-122.6369},
-                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
-                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                    {
-                      coords: {lat:45.5195,lng:-122.6364},
-                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
-                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                    {
-                      coords: {lat:45.5284,lng:-122.7251},
-                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
-                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
-          
-                    },   
-                  ];
-          
-                function addMarker(props) {
-                      var markerDemo = new google.maps.Marker({
-                        position: props.coords,
-                        map:map
-                      });
-                        if(props.iconImage){
-                          markerDemo.setIcon(props.iconImage);
-                        }
-                        if(props.content){
-                          var infoWindowDemo = new google.maps.InfoWindow({
-                            content:props.content
-                          });
-                          markerDemo.addListener('click', function(){
-                            infoWindowDemo.open(map, markerDemo);
-                        });
-                      }
-                    }
-          
-                for(var i =  0;i< markers.length;i++){
-                      addMarker(markers[i]);
-                    };
-                  }
-          
-                function geocodeAddress(geocoder, resultsMap) {
-                  var address = document.getElementById('address').value;
-                  var catIcon = `http://never-mind.org/img/`+category.value+`.png`
-                  var comment = document.getElementById('comment').value;
-                  var contentPop = `<p><strong>Incident type:</strong> `+category.value+`<br><br><strong>Comments:</strong> `+comment+`</p>`
-          
-                  geocoder.geocode({'address': address}, function(results, status) {
-                    if (status === 'OK') {
-                      resultsMap.setCenter(results[0].geometry.location);
-                      var marker = new google.maps.Marker({
-                        map: resultsMap,
-                        position: results[0].geometry.location,
-                        content: contentPop,
-                        icon: catIcon,
-                      });
-                      if(marker.content){
-                        var infoWindow = new google.maps.InfoWindow({
-                          content: marker.content
-                        });
-                        marker.info = new google.maps.InfoWindow({
-                        content: contentPop
-                        });
-          
-                        google.maps.event.addListener(marker, 'click', function() {
-                        marker.info.open(map, marker);
-                        });
-                      }
-                    } else {
-                      alert('Geocode was not successful for the following reason: ' + status);
-                    }
-                  });
+    </section>
+    <h1 class="sectionHeaders" id="aboutUs">About Us!</h1>
+    <p>Welcome to Heckle! Here, you'll have access to all kinds of resources that will help you live your life knowing that safety is in the palm of your hand. After witnessing cat-calling, bullying, harrassment, and many other types of heckling, our team made it a mission to provide the world with tools that can help keep all communities safer by providing awareness, information, and outsourced services.</p>
+    <br>
+    <p>We are Alyssa, Rachel, Mariam and James.  A powerful team ready to take on the world and help YOU!  We come from different backgrounds in our past careers and are now in the developer world, taking it head on!  With our new skill set, we decided that the first thing we want to do is find a way to make people in our communities feel and be safer. So we built Heckle. A virtual and personal safe space for you to let your community know what's going on in the neighborhood and for you to see what others have to say.  </p>
+    <br>
+    <p>Please visit our Incident and Safe Space sections to really see our product in action and don't hesitate to leave us feedback!  The more we hear from you the more we can help!</p>
+    <br>
+    <h1 class="sectionHeaders" id="safeSpaces">Report an Incident</h1>
+    <p>Report a Heckle incident now!  We want to help you and your community stay safe in your neighborhood. Simply enter your location or location where the incident took place, a heckle type and a brief description of what happened.  Feel free to visit our <a href="#safeZone">"Find a Safe Space" </a>section to find some refuge. </p>
+    <br>
+    <div class="row">
+    <div id="floating-panel">
+      <label for="address">Address:</label>
+      <input id="address" type="textbox" value="Portland, OR">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="racism">Racism</option>
+        <option value="homophobia">Homophobia</option>
+        <option value="sexual-harassment">Sexual Harassment</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="comment">Comment:</label>
+      <input id="comment" type="textbox"><br>
+      <input id="submit" type="button" value="Submit Address">
+      <input id="geoloc" type="button" value="Or Use Current Location">
+    </div>
+    <div id="map">
+      <script>
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: {lat: 45.5169, lng: -122.6754}
+          });
+          var geocoder = new google.maps.Geocoder();
+        
+          document.getElementById('submit').addEventListener('click', function() {
+            geocodeAddress(geocoder, map);
+          });
+            document.getElementById('geoloc').addEventListener('click', function() {
+            locAddress(map);
+          });
+        
+          var markers = [
+            {
+              coords: {lat:45.548561,lng:-122.666489},
+              iconImage: `http://never-mind.org/img/racism.png`,
+              content:`<p><strong>Incident type:</strong> racism<br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+            {
+              coords: {lat:45.520020,lng:-122.666489},
+              iconImage: `http://never-mind.org/img/homophobia.png`,
+              content:`<p><strong>Incident type:</strong> homophobia <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+            {
+              coords: {lat:45.5024,lng:-122.6749},
+              iconImage: `http://never-mind.org/img/other.png`,
+              content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },
+            {
+              coords: {lat:45.519926,lng:-122.676619},
+              iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+              content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+              
+            },   
+            {
+              coords: {lat:45.509940,lng:-122.683855},
+              iconImage: `http://never-mind.org/img/racism.png`,
+              content:`<p><strong>Incident type:</strong> racism<br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+            {
+              coords: {lat:45.517363,lng:-122.659083},
+              iconImage: `http://never-mind.org/img/homophobia.png`,
+              content:`<p><strong>Incident type:</strong> homophobia <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+            {
+              coords: {lat:45.517599,lng:-122.675166},
+              iconImage: `http://never-mind.org/img/other.png`,
+              content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },
+            {
+              coords: {lat:45.5111,lng:-122.6834},
+              iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+              content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+            {
+              coords: {lat:45.532322,lng:-122.651839},
+              iconImage: `http://never-mind.org/img/other.png`,
+              content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },
+            {
+              coords: {lat:45.5101,lng:-122.7158},
+              iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+              content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+            {
+              coords: {lat:45.5119,lng:-122.6369},
+              iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+              content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+            {
+              coords: {lat:45.5195,lng:-122.6364},
+              iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+              content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+            {
+              coords: {lat:45.5284,lng:-122.7251},
+              iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+              content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        
+            },   
+          ];
+        
+        function addMarker(props) {
+              var markerDemo = new google.maps.Marker({
+                position: props.coords,
+                map:map
+              });
+                if(props.iconImage){
+                  markerDemo.setIcon(props.iconImage);
                 }
-          
-          
-          
-                function locAddress(map) {
-                  infoWindow = new google.maps.InfoWindow;
-                  var catIcon = `http://never-mind.org/img/`+category.value+`.png`
-                  var comment = document.getElementById('comment').value;
-                  var contentPop = `<p><strong>Incident type:</strong> `+category.value+`<br><br><strong>Comments:</strong> `+comment+`</p>`
-                    
-                  if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(function(position) {
-                    var pos = {
-                      lat: position.coords.latitude,
-                      lng: position.coords.longitude
-                    };
-        
-                    infoWindow.setPosition(pos);
-                    infoWindow.setContent('Location found.');
-                    infoWindow.open(map);
-                    map.setCenter(pos);
-        
-                    var myMarker = new google.maps.Marker({
-                    position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
-                    content: contentPop,
-                    icon: catIcon,
-                    });
-        
-                    if(myMarker.content){
-                      var infoWindow2 = new google.maps.InfoWindow({
-                        content: myMarker.content
-                      });
-                      myMarker.info = new google.maps.InfoWindow({
-                      content: contentPop
-                      });
-        
-                      google.maps.event.addListener(myMarker, 'click', function() {
-                      myMarker.info.open(map, myMarker);
-                      });
-                    }
-        
-                    map.setCenter(myMarker.position);
-                    myMarker.setMap(map);
-        
-                  }, function() {
-                    handleLocationError(true, infoWindow, map.getCenter());
+                if(props.content){
+                  var infoWindowDemo = new google.maps.InfoWindow({
+                    content:props.content
                   });
-                } else {
-                  // Browser doesn't support Geolocation
-                  handleLocationError(false, infoWindow, map.getCenter());
-                  
-                }
-        
-                function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-                  infoWindow.setPosition(pos);
-                  infoWindow.setContent(browserHasGeolocation ?
-                                        'Error: The Geolocation service failed.' :
-                                        'Error: Your browser doesn\'t support geolocation.');
-                  infoWindow.open(map);
-                }
+                  markerDemo.addListener('click', function(){
+                    infoWindowDemo.open(map, markerDemo);
+                });
               }
+            }
+        
+        for(var i =  0;i< markers.length;i++){
+              addMarker(markers[i]);
+            };
+          }
+        
+        function geocodeAddress(geocoder, resultsMap) {
+          var address = document.getElementById('address').value;
+          var catIcon = `http://never-mind.org/img/`+category.value+`.png`
+          var comment = document.getElementById('comment').value;
+          var contentPop = `<p><strong>Incident type:</strong> `+category.value+`<br><br><strong>Comments:</strong> `+comment+`</p>`
+        
+          geocoder.geocode({'address': address}, function(results, status) {
+            if (status === 'OK') {
+              resultsMap.setCenter(results[0].geometry.location);
+              var marker = new google.maps.Marker({
+                map: resultsMap,
+                position: results[0].geometry.location,
+                content: contentPop,
+                icon: catIcon,
+              });
+              if(marker.content){
+                var infoWindow = new google.maps.InfoWindow({
+                  content: marker.content
+                });
+                marker.info = new google.maps.InfoWindow({
+                content: contentPop
+                });
+        
+                google.maps.event.addListener(marker, 'click', function() {
+                marker.info.open(map, marker);
+                });
+              }
+            } else {
+              alert('Geocode was not successful for the following reason: ' + status);
+            }
+          });
+        }
+        
+        
+        
+        function locAddress(map) {
+          infoWindow = new google.maps.InfoWindow;
+          var catIcon = `http://never-mind.org/img/`+category.value+`.png`
+          var comment = document.getElementById('comment').value;
+          var contentPop = `<p><strong>Incident type:</strong> `+category.value+`<br><br><strong>Comments:</strong> `+comment+`</p>`
+            
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+        
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+        
+            var myMarker = new google.maps.Marker({
+            position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+            content: contentPop,
+            icon: catIcon,
+            });
+        
+            if (myMarker.content){
+              var infoWindow2 = new google.maps.InfoWindow({
+                content: myMarker.content
+              });
+              myMarker.info = new google.maps.InfoWindow({
+              content: contentPop
+              });
+        
+              google.maps.event.addListener(myMarker, 'click', function() {
+              myMarker.info.open(map, myMarker);
+              });
+            }
+        
+            map.setCenter(myMarker.position);
+            myMarker.setMap(map);
+        
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
           
-            </script>
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=KEYHERE&callback=initMap">
-            </script>
+        }
+        
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+          infoWindow.setPosition(pos);
+          infoWindow.setContent(browserHasGeolocation ?
+            'Error: The Geolocation service failed.' :
+            'Error: Your browser doesn\'t support geolocation.');
+          infoWindow.open(map);
+        }
+        }
+        
+      </script>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=KEYHERE&callback=initMap"></script>
+    </div>
+    
+    <br>
+  
+    <h1 class="sectionHeaders" id="safeZone">Find a Safe Space</h1>
+    <p>A safe space is an environment in which a person or category of people can feel confident that they will not be exposed to discrimination, criticism, harassment, or any other emotional or physical harm. With Heckle, you can find REFUGE(tm) certified businesses that welcome all people.  You can find someone there to talk to, a place to hang out in, or even just use their gender neutral bathrooms!  Everyone should feel safe in their communities and we are working our hardest to ensure just that! </p>
+    </div>
+    <br>
+    <a href="#safeZone"><button type="submit" id="safeSpaceLoc" class="btn btn-success mb-2">Find A Safe Space</button></a>
+    <div class="safes">
+      <div class="row">
+        <ul class="spaceList">
 
-          </div>
-        </div>
-        <h1 class="sectionHeaders" id="contact">Contact</h2>
-        <p>Want to leave us feedback or have questions?  Please reach out! </p>
-        <p><strong>Phone: </strong>1.800.Heckle!</p>
-        <p><strong>Email: </strong><a href="mailto: dont_heckle_me@heckle.com">dont_heckle_me@heckle.com</a></p>
-        <footer><i>Copyright (c) 2020 Heckle - This software is licensed under the MIT license.</i></footer>
-      </body>
-        </html>
+        </ul>
+        <br>
+      </div>
+      <h1 class="sectionHeaders" id="contact">
+      Contact</h1>
+      <p>Want to leave us feedback or have questions?  Please reach out! </p>
+      <p><strong>Phone: </strong>1.800.Heckle!</p>
+      <p><strong>Email: </strong><a href="mailto: dont_heckle_me@heckle.com">dont_heckle_me@heckle.com</a></p>
+      <footer><i>Copyright (c) 2020 Heckle - This software is licensed under the MIT license.</i></footer>
+    </div>
+  </body>
+</html>
