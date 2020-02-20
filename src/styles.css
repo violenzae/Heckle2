@@ -111,6 +111,15 @@ footer {
   height: 40px;
 }
 
+#safeButton {
+  background-color: rgb(139, 130, 156);
+color: rgb(85, 5, 85);
+border-radius: 8px;
+border: none;
+padding: 15px;
+
+}
+
 #safeSpaceLoc {
 background-color: rgb(139, 130, 156);
 color: rgb(85, 5, 85);
@@ -119,6 +128,7 @@ border: none;
 padding: 15px;
 
 }
+
 
 #house {
   height: 80px;
@@ -168,7 +178,8 @@ padding: 15px;
   margin-bottom: 2%;
 
 }
-/* 
-ul:nth-child(odd) {
-  color: black; 
-} */
+
+.safeOutput:nth-child(odd) {
+  color: white; 
+  background-color: rgb(85, 5, 85);
+}

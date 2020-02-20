@@ -14,6 +14,7 @@ $(document).ready(function() {
     let safeLat;
     let safeLong;
 
+
     function showLocation(position) {
       safeLat = position.coords.latitude;
       safeLong = position.coords.longitude; 
