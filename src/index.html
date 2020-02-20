@@ -9,6 +9,24 @@
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="main.js"></script>
+    <style>
+        #map {
+          height: 400px;
+          width: 100%;
+        }
+  
+        #floating-panel {
+          width: 100%;
+          background-color: rgb(85, 5, 85);
+          color: white;
+          padding: 5px;
+          border: 1px solid #999;
+          text-align: center;
+          font-family: 'Roboto','sans-serif';
+          line-height: 30px;
+          padding-left: 10px;
+        }
+      </style>
     <title>Heckle</title>
   </head>
   <body>
@@ -106,6 +124,240 @@
               <ul class="spaceList">
 
               </ul>
+        <div class="row">
+          <div id="floating-panel">
+              <label for="address">Address:</label>
+              <input id="address" type="textbox" value="Portland, OR">
+              <label for="category">Category:</label>
+              <select id="category">
+                  <option value="racism">Racism</option>
+                  <option value="homophobia">Homophobia</option>
+                  <option value="sexual-harassment">Sexual Harassment</option>
+                  <option value="other">Other</option>
+                </select>
+              <label for="comment">Comment:</label>
+              <input id="comment" type="textbox"><br>
+              <input id="submit" type="button" value="Submit Address">
+              <input id="geoloc" type="button" value="Or Use Current Location">
+            </div>
+          <div id="map">
+            <script>
+                function initMap() {
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 13,
+                    center: {lat: 45.5169, lng: -122.6754}
+                  });
+                  var geocoder = new google.maps.Geocoder();
+          
+                  document.getElementById('submit').addEventListener('click', function() {
+                    geocodeAddress(geocoder, map);
+                  });
+                    document.getElementById('geoloc').addEventListener('click', function() {
+                    locAddress(map);
+                  });
+          
+                  var markers = [
+                    {
+                      coords: {lat:45.548561,lng:-122.666489},
+                      iconImage: `http://never-mind.org/img/racism.png`,
+                      content:`<p><strong>Incident type:</strong> racism<br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                    {
+                      coords: {lat:45.520020,lng:-122.666489},
+                      iconImage: `http://never-mind.org/img/homophobia.png`,
+                      content:`<p><strong>Incident type:</strong> homophobia <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                    {
+                      coords: {lat:45.5024,lng:-122.6749},
+                      iconImage: `http://never-mind.org/img/other.png`,
+                      content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },
+                    {
+                      coords: {lat:45.519926,lng:-122.676619},
+                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+                      
+                    },   
+                    {
+                      coords: {lat:45.509940,lng:-122.683855},
+                      iconImage: `http://never-mind.org/img/racism.png`,
+                      content:`<p><strong>Incident type:</strong> racism<br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                    {
+                      coords: {lat:45.517363,lng:-122.659083},
+                      iconImage: `http://never-mind.org/img/homophobia.png`,
+                      content:`<p><strong>Incident type:</strong> homophobia <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                    {
+                      coords: {lat:45.517599,lng:-122.675166},
+                      iconImage: `http://never-mind.org/img/other.png`,
+                      content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },
+                    {
+                      coords: {lat:45.5111,lng:-122.6834},
+                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                    {
+                      coords: {lat:45.532322,lng:-122.651839},
+                      iconImage: `http://never-mind.org/img/other.png`,
+                      content:`<p><strong>Incident type:</strong> other <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },
+                    {
+                      coords: {lat:45.5101,lng:-122.7158},
+                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                    {
+                      coords: {lat:45.5119,lng:-122.6369},
+                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                    {
+                      coords: {lat:45.5195,lng:-122.6364},
+                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                    {
+                      coords: {lat:45.5284,lng:-122.7251},
+                      iconImage: `http://never-mind.org/img/sexual-harassment.png`,
+                      content:`<p><strong>Incident type:</strong> sexual-harassment <br><br><strong>Comments:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+          
+                    },   
+                  ];
+          
+                function addMarker(props) {
+                      var markerDemo = new google.maps.Marker({
+                        position: props.coords,
+                        map:map
+                      });
+                        if(props.iconImage){
+                          markerDemo.setIcon(props.iconImage);
+                        }
+                        if(props.content){
+                          var infoWindowDemo = new google.maps.InfoWindow({
+                            content:props.content
+                          });
+                          markerDemo.addListener('click', function(){
+                            infoWindowDemo.open(map, markerDemo);
+                        });
+                      }
+                    }
+          
+                for(var i =  0;i< markers.length;i++){
+                      addMarker(markers[i]);
+                    };
+                  }
+          
+                function geocodeAddress(geocoder, resultsMap) {
+                  var address = document.getElementById('address').value;
+                  var catIcon = `http://never-mind.org/img/`+category.value+`.png`
+                  var comment = document.getElementById('comment').value;
+                  var contentPop = `<p><strong>Incident type:</strong> `+category.value+`<br><br><strong>Comments:</strong> `+comment+`</p>`
+          
+                  geocoder.geocode({'address': address}, function(results, status) {
+                    if (status === 'OK') {
+                      resultsMap.setCenter(results[0].geometry.location);
+                      var marker = new google.maps.Marker({
+                        map: resultsMap,
+                        position: results[0].geometry.location,
+                        content: contentPop,
+                        icon: catIcon,
+                      });
+                      if(marker.content){
+                        var infoWindow = new google.maps.InfoWindow({
+                          content: marker.content
+                        });
+                        marker.info = new google.maps.InfoWindow({
+                        content: contentPop
+                        });
+          
+                        google.maps.event.addListener(marker, 'click', function() {
+                        marker.info.open(map, marker);
+                        });
+                      }
+                    } else {
+                      alert('Geocode was not successful for the following reason: ' + status);
+                    }
+                  });
+                }
+          
+          
+          
+                function locAddress(map) {
+                  infoWindow = new google.maps.InfoWindow;
+                  var catIcon = `http://never-mind.org/img/`+category.value+`.png`
+                  var comment = document.getElementById('comment').value;
+                  var contentPop = `<p><strong>Incident type:</strong> `+category.value+`<br><br><strong>Comments:</strong> `+comment+`</p>`
+                    
+                  if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                    var pos = {
+                      lat: position.coords.latitude,
+                      lng: position.coords.longitude
+                    };
+        
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent('Location found.');
+                    infoWindow.open(map);
+                    map.setCenter(pos);
+        
+                    var myMarker = new google.maps.Marker({
+                    position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                    content: contentPop,
+                    icon: catIcon,
+                    });
+        
+                    if(myMarker.content){
+                      var infoWindow2 = new google.maps.InfoWindow({
+                        content: myMarker.content
+                      });
+                      myMarker.info = new google.maps.InfoWindow({
+                      content: contentPop
+                      });
+        
+                      google.maps.event.addListener(myMarker, 'click', function() {
+                      myMarker.info.open(map, myMarker);
+                      });
+                    }
+        
+                    map.setCenter(myMarker.position);
+                    myMarker.setMap(map);
+        
+                  }, function() {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                  });
+                } else {
+                  // Browser doesn't support Geolocation
+                  handleLocationError(false, infoWindow, map.getCenter());
+                  
+                }
+        
+                function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                  infoWindow.setPosition(pos);
+                  infoWindow.setContent(browserHasGeolocation ?
+                                        'Error: The Geolocation service failed.' :
+                                        'Error: Your browser doesn\'t support geolocation.');
+                  infoWindow.open(map);
+                }
+              }
+          
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=KEYHERE&callback=initMap">
+            </script>
+
           </div>
         </div>
         <h1 class="sectionHeaders" id="contact">Contact</h2>
@@ -115,4 +367,3 @@
         <footer><i>Copyright (c) 2020 Heckle - This software is licensed under the MIT license.</i></footer>
       </body>
         </html>
-
