@@ -57,17 +57,6 @@ footer {
   margin-top: 5%;
 }
 
-/* .sectionHeaders {
-  background-color: rgb(85, 5, 85);
-  color: white;
-  list-style-type: none;
-  margin: 0;
-  padding: 8px;
-  border-radius: 8px;
-  margin-bottom: 2%;
-  text-indent: 15px;
-} */
-
 #ourServices {
   background-color: rgb(85, 5, 85);
   color: white;
@@ -211,17 +200,53 @@ padding: 15px;
   height: 400px;
   width: 100%;
   margin-bottom: 5%;
+  border-radius: 8px;
 }
 
 #floating-panel {
   width: 100%;
   background-color: rgb(85, 5, 85);
   color: white;
-  padding: 5px;
+  padding: 8px;
+  border-radius: 8px;
   border: 1px solid #999;
   text-align: center;
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
 }
+
+.userInput {
+  border-radius: 8px;
+}
+
+#subButton {
+background-color: rgb(139, 130, 156);
+color: rgb(85, 5, 85);
+border-radius: 10px;
+border: none;
+padding: 5px;
+border: 1px;
+border-style: solid;
+border-color: white;
+}
+
+#curLoc {
+  background-color: rgb(139, 130, 156);
+  color: rgb(85, 5, 85);
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  }
+
+#curLoc:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#subButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 
