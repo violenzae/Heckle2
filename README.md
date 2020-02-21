@@ -37,17 +37,13 @@ _This application will make API requests to google maps in order to pinpoint an 
 11. Enter information on your experience.
 12. Click "Enter!"
 
-*Option Two:*
-
-Copy and paste `https://jonathancarlos21.github.io/acolistro/Heckle2` into your address bar.
-
 ## **Known Bugs**
 
 No known bugs at this time.
 
 ## **Support and contact details**
 
-If you have any questions, comments, or concerns, feel free to contact the content creator at examplemail@company.net 
+If you have any questions, comments, or concerns, feel free to contact the content creator at violenza@gmail.com. 
 
 ## **Technologies used**
 * REFUGE Restrooms API
